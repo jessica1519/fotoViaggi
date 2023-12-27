@@ -1,0 +1,338 @@
+body {
+  margin: 0px;
+  background-color: black;
+}
+
+/*HEADER*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: 5rem;
+  width: 100%;
+  align-items: center;
+}
+
+.logo {
+  height: 100%;
+  flex: 0.3; /* deve ex uguale alla flex di socialbar per avere tutto centrato*/
+  padding: 0.5rem;
+}
+
+.imgLogo {
+  height: 100%;
+}
+.imgLogo:hover {
+  cursor: pointer;
+}
+.socialBar {
+  display: flex;
+  height: 100%;
+  width: 20%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 0.3; /* deve ex uguale alla flex di logo per avere tutto centrato*/
+}
+.socialBar a:hover {
+  color: #333;
+}
+.socialBar .facebook {
+  color: #3b5998;
+}
+.socialBar .instagram {
+  color: #dd2a7b;
+}
+.socialBar .mail {
+  color: #6f6f6f;
+}
+.socialImg {
+  width: 20%;
+}
+.menu {
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+  color: black;
+  border: none;
+  align-items: center;
+}
+
+.menu > a:hover {
+  color: white;
+}
+.menuItem {
+  margin-right: 1rem;
+  z-index: 100;
+  position: relative;
+  padding: 1rem;
+  width: max-content;
+}
+.menuItem > a {
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#portfolioItem > a:hover {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#portfolioItem {
+  position: absolute;
+  text-decoration: none;
+  display: none;
+  background-color: black;
+  opacity: 80%;
+}
+
+.menuItem > a:hover {
+  color: white;
+  cursor: pointer;
+  font-size: medium;
+  text-align: start;
+}
+
+#button {
+  text-align: center;
+  font-size: small;
+  color: gray;
+  font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
+  background-color: black;
+  border: none;
+  font-weight: bold;
+}
+
+#button:hover {
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+.homeGallery {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.image {
+  width: 70%;
+  margin: 0 auto;
+  display: block; /*4rem è l'altezza della header se cambio quella cambio anche qui, 2rem invece è il margin-top di homeGallery*/
+}
+
+/*.arrow {
+  background-color: transparent;
+  font-size: 3rem;
+  height: 3rem;
+  z-index: 80;
+  opacity: 30%;
+  border: none;
+  border-radius: 4rem;
+  position: absolute;
+  top: 50%;
+  color: white;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.back {
+  left: 0;
+}
+.forward {
+  right: 0;
+}
+
+.arrow:hover {
+  color: white;
+  cursor: pointer;
+  opacity: 100%;
+}
+.mobileMenuButton {
+  display: none;
+}*/
+
+/*pagina menu di viaggio*/
+/*GRID IMMAGINI-TESTO---CORPO DELLA PAGINA--*/
+
+#grid-menuFoto {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: calc(25% - 5rem) calc(25% - 5rem) calc(25% - 5rem) calc(
+      25% - 5rem
+    );
+  grid-gap: 5rem;
+  padding-top: 2rem;
+  margin: 3rem;
+  text-align: center;
+  justify-content: center;
+}
+.grid-img {
+  padding-left: 2rem;
+  height: 90%;
+  width: 100%;
+  justify-content: center;
+}
+.grid-text {
+  color: gray;
+  font-size: 0.5rem;
+  font-family: "Courier New", Courier, monospace;
+  text-align: start;
+  line-height: 2rem;
+  padding-right: 2rem;
+}
+.menuFoto-a,
+.titleFotoDiViaggio {
+  font-family: "Courier New", Courier, monospace;
+  text-align: start;
+  text-decoration: none;
+  font-size: 2rem;
+  color: gray;
+  background-color: black;
+  border: none;
+}
+.titleFotoDiViaggio {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.menuFoto-a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+}
+
+/*FOOTER*/
+.containerContact {
+  background-color: black;
+  margin-top: 10rem;
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.containerImgContact {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 1rem;
+  width: 70%;
+  border-top: solid gray 0.1rem;
+  text-align: center;
+  justify-content: space-evenly;
+  padding-top: 5rem;
+}
+a {
+  color: gray;
+}
+a:hover {
+  color: whitesmoke;
+}
+
+.mobileMenuButton {
+  display: none;
+}
+
+/*MEDIA QUERIES 780PX MOBILE*/
+
+@media only screen and (max-width: 780px) {
+  .mobileMenuContainer {
+    position: relative;
+  }
+
+  .menu {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    background-color: black;
+    opacity: 80%;
+    z-index: 2;
+    top: 2rem;
+  }
+
+  .mobileMenuButton {
+    display: block;
+    text-align: center;
+    font-size: small;
+    color: gray;
+    font-family: "Courier New", Courier, monospace;
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+  }
+
+  #button {
+    display: none;
+  }
+  .menuItem {
+    padding: 0.2rem;
+  }
+
+  .logo {
+    height: 80%;
+  }
+
+  .socialBar {
+    justify-content: space-around;
+    margin-right: 0.5rem;
+  }
+  #grid-menuFoto {
+    display: block;
+    grid-template-columns: 90%;
+    padding-top: 2rem;
+  }
+  .grid-img {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  .grid-text {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 5rem;
+  }
+  .menuFoto-a {
+    text-decoration: underline;
+    text-align: center;
+  }
+  h1,
+  .titleFotoDiViaggio {
+    line-height: 1.5rem;
+  }
+  .image {
+    width: 100%;
+    height: 80%;
+  }
+
+  /*FOOTER*/
+  .footer {
+    color: gray;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    font-size: x-small;
+    display: block;
+    padding-top: 0;
+  }
+  .footerparagrafi {
+    text-align: center;
+    padding: 1rem;
+    background-color: black;
+  }
+  .privacy,
+  .cookie {
+    display: inline;
+  }
+  .email,
+  .privacy,
+  .cookie,
+  .telefono {
+    color: gray;
+    text-decoration: none;
+  }
+}
