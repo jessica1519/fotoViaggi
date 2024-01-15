@@ -38,13 +38,13 @@ function avantiArrow() {
   if (i < foto.length - 1) i++;
   else i = 0;
   document.getElementById("image").src = foto[i];
-  imgVerticale(i);
+  //imgVerticale(i);
 }
 function indietroArrow() {
   if (i == 0) i = foto.length - 1;
   else i--;
   document.getElementById("image").src = foto[i];
-  imgVerticale(i);
+  //imgVerticale(i);
 }
 
 /*FUNZIONE AGG. CLASSE X IMG VERTICALI
