@@ -34,7 +34,7 @@ function indietroArrow() {
   document.getElementById("image").src = foto[i];
 }*/
 
-//AVANTI GALLERIA AUTO 4 SECONDI//
+/*AVANTI GALLERIA AUTO 4 SECONDI
 let myInterval = setInterval(avantiArrow, 4000);
 $(".arrow").click(function myStopFunction() {
   clearInterval(myInterval);
@@ -43,7 +43,7 @@ $(".arrow").click(function myStopFunction() {
 
 function regain() {
   myInterval = setInterval(avantiArrow, 4000);
-}
+}*/
 
 /*BOTTONE PORTFOLIO*/
 function button(id) {
