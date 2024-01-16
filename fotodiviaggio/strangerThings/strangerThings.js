@@ -9,20 +9,20 @@ function button(id) {
 //GALLERIA FOTO//
 let foto = document.getElementById("image");
 foto = [
-  "../strangerThings/strangerThingsPhoto/1.JPG",
-  "../strangerThings/strangerThingsPhoto/2.JPG",
-  "../strangerThings/strangerThingsPhoto/3.JPG",
-  "../strangerThings/strangerThingsPhoto/4.JPG",
-  "../strangerThings/strangerThingsPhoto/5.JPG",
-  "../strangerThings/strangerThingsPhoto/6.JPG",
-  "../strangerThings/strangerThingsPhoto/7.JPG",
-  "../strangerThings/strangerThingsPhoto/8.JPG",
-  "../strangerThings/strangerThingsPhoto/9.JPG",
-  "../strangerThings/strangerThingsPhoto/10.JPG",
-  "../strangerThings/strangerThingsPhoto/11.JPG",
-  "../strangerThings/strangerThingsPhoto/12.JPG",
-  "../strangerThings/strangerThingsPhoto/13.JPG",
-  "../strangerThings/strangerThingsPhoto/14.JPG",
+  "../strangerThings/strangerThingsPhoto/1.jpg",
+  "../strangerThings/strangerThingsPhoto/2.jpg",
+  "../strangerThings/strangerThingsPhoto/3.jpg",
+  "../strangerThings/strangerThingsPhoto/4.jpg",
+  "../strangerThings/strangerThingsPhoto/5.jpg",
+  "../strangerThings/strangerThingsPhoto/6.jpg",
+  "../strangerThings/strangerThingsPhoto/7.jpg",
+  "../strangerThings/strangerThingsPhoto/8.jpg",
+  "../strangerThings/strangerThingsPhoto/9.jpg",
+  "../strangerThings/strangerThingsPhoto/10.jpg",
+  "../strangerThings/strangerThingsPhoto/11.jpg",
+  "../strangerThings/strangerThingsPhoto/12.jpg",
+  "../strangerThings/strangerThingsPhoto/13.jpg",
+  "../strangerThings/strangerThingsPhoto/14.jpg",
 ];
 
 var i = 0;
